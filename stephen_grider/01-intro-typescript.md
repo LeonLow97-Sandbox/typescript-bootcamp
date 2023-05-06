@@ -33,20 +33,20 @@
 
 ## Why should we use TypeScript?
 
-- Type Safety: 
-    - TypeScript provides type annotations that help catch potential errors during development. 
-    - This makes it easier to debug and maintain code as it grows in size and complexity. 
-    - With TypeScript, you can detect type-related issues early in the development process, reducing the number of bugs that make it into production.
-- Better Tooling: 
-    - With TypeScript, you get better tooling support in your code editor. 
-    - TypeScript helps you to get better IntelliSense and code completion suggestions, making it easier to write and understand code.
-- Improved Code Readability: 
-    - TypeScript allows developers to write more expressive and readable code. 
-    - With the help of type annotations, code becomes more self-documenting, which helps to improve the overall code readability.
-- Better Scalability: 
-    - TypeScript helps to make larger codebases more scalable and maintainable. 
-    - With the help of type annotations, it's easier to understand the flow of data in large codebases. 
-    - This helps to reduce the complexity of code and make it easier to maintain.
+- Type Safety:
+  - TypeScript provides type annotations that help catch potential errors during development.
+  - This makes it easier to debug and maintain code as it grows in size and complexity.
+  - With TypeScript, you can detect type-related issues early in the development process, reducing the number of bugs that make it into production.
+- Better Tooling:
+  - With TypeScript, you get better tooling support in your code editor.
+  - TypeScript helps you to get better IntelliSense and code completion suggestions, making it easier to write and understand code.
+- Improved Code Readability:
+  - TypeScript allows developers to write more expressive and readable code.
+  - With the help of type annotations, code becomes more self-documenting, which helps to improve the overall code readability.
+- Better Scalability:
+  - TypeScript helps to make larger codebases more scalable and maintainable.
+  - With the help of type annotations, it's easier to understand the flow of data in large codebases.
+  - This helps to reduce the complexity of code and make it easier to maintain.
 
 ## Design Patterns with TS
 
@@ -58,7 +58,7 @@
   - E.g., "red"
     - It's a string
     - It is a value that has all the properties and methods that we assume that a string has.
-  
+
 ## Basics Types
 
 - `string`
@@ -82,3 +82,21 @@
 - Types allow other engineers to understand what values are flowing around our codebase.
   - E.g., what argument types are passed into the functions
 
+## Customise how Typescript compiler builds JavaScript files
+
+- Run `tsc --init`
+  - Creates `tsconfig.json` file.
+    - `"outDir"` represents the built JavaScript files after typescript compiles.
+    - `"rootDir"` represents typescript files.
+- Run `tsc -w` to compile the typescript files continuously.
+- `npm init --y`
+- `npm install nodemon concurrently`
+  - start up typescript compiler and run node.
+  - In `package.json`:
+  ```js
+    "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  ```
