@@ -39,3 +39,14 @@ class Vehicle {
 - The implemented methods can refer to other methods that don't actually exist yet (we still have to provide names and types for the un-implemented methods).
   - methods from the child class.
 - Can make child classes promise to implement some other method.
+
+## Interfaces vs Abstract class
+
+- Interfaces
+  - Sets up a contract between different classes.
+  - Use when we have very different objects that we want to work together.
+  - Promotes *loose coupling*.
+- Inheritance / Abstract Classes
+  - Sets up a contract between different classes.
+  - Use when we are trying to build up a definition of an object.
+  - *Strongly couples* classes together.
