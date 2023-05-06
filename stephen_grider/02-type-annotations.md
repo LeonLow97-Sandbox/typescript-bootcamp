@@ -30,3 +30,18 @@
     - Typescript tries to figure out what type of value a function will return.
     - Type inference working for function outputs, but we won't use it.
 
+## Typed Arrays
+
+- Arrays where each element is some **consistent type of value**.
+
+```ts
+// Type inference shows array with type `string[]`
+const carMakers = ['ford', 'toyota', 'mercedes'];
+
+// If empty array, it shows type `any` for type inference, so add the annotation.
+const carMakers: string[] = []
+```
+
+## Where to use Typed Arrays?
+
+- Any time we need to represent a collection of records with some arbitrary sort order.
