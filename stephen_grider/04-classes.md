@@ -29,5 +29,3 @@ class Vehicle {
   constructor(public color: string) {}
 }
 ```
-
-## Fields with Inheritance
