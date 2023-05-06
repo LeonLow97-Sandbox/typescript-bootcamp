@@ -26,6 +26,7 @@ let point: { x: number; y: number } = {
 };
 
 // Function, indicate what argument the function is receiving and what it is returning
+// Type annotation in the variable 'logNumber'
 const logNumber: (i: number) => void = (i: number) => {
   console.log(i);
 };

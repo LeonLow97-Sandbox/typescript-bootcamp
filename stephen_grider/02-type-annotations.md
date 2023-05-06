@@ -20,3 +20,13 @@
 - `any` is a type.
 - Means TS has no idea what this is - can't check for correct property references.
 - **AVOID variables with `any` at all costs.**
+
+## Type annotations and Type inference for functions
+
+- Type annotations
+    - Code we add to tell Typescript what type of arguments a function will receive and what type of values it will return.
+    - Always add `return` annotations to avoid future errors.
+- Type inference
+    - Typescript tries to figure out what type of value a function will return.
+    - Type inference working for function outputs, but we won't use it.
+
