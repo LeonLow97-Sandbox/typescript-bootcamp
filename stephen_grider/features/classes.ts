@@ -12,6 +12,11 @@ console.log(vehicle.color);
 
 // copy all the methods from Vehicle to Car
 class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    // refers to immediate parent class object
+    super(color);
+  }
+
   // overriding the drive method of the Parent class
   private drive(): void {
     console.log('vroom vroom');
@@ -23,5 +28,5 @@ class Car extends Vehicle {
   }
 }
 
-const car = new Car('red');
+const car = new Car(4, 'red');
 car.startDrivingProcess();
