@@ -1,1 +1,5 @@
 node_modules
+
+/maps/.parcel-cache
+
+/maps/dist
