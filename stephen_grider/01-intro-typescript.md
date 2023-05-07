@@ -100,3 +100,10 @@
     "start": "concurrently npm:start:*"
   },
   ```
+
+## What are Type Definition Files (TDFs)?
+
+- TDFs in TypeScript are files that provide Type information for JavaScript code.
+- Tells TypeScript what the different parts of a JavaScript code are and what type of data they contain or return.
+- When working with *external libraries or modules* in TypeScript, TDFs enable you to use TypeScript's type checking and code completion feature with that code.
+- `npm install @types/node`
