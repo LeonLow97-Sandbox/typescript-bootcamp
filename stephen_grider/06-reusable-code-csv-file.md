@@ -64,3 +64,15 @@ export abstract class CsvFileReader<T> {
   ...
 }
 ```
+
+## Inheritance vs Composition
+
+- Code reuse.
+- Inheritance:
+  - Parent `abstract` class
+  - Child class `extends` the parent class.
+  - Inheritance is characterized by a **'is a'** relationship between 2 classes.
+    - E.g., `MatchReader` is a `CsvFileReader` as MatchReader has all the properties and methods of a CsvFileReader.
+- Composition
+  - Uses interface
+  - Composition is characterized by a **'has a'** relationship between 2 classes.
