@@ -1,6 +1,7 @@
 # Project
 
 - Extracting data from a `.csv` file and parsing it in JavaScript.
+- Run `npm start`
 
 ## Steps
 
@@ -25,3 +26,7 @@ enum MatchResult {
   Draw = 'D',
 }
 ```
+
+## Type Assertion on enum
+
+- `row[5] as MatchResult`
