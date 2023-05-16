@@ -54,6 +54,7 @@ const carMakers: string[] = [];
 ## Why Tuples?
 
 - Rarely used in Typescript.
+- Used to represent arrays.
 - Difficult to understand what we are representing in a tuple:
   ```ts
   // What are these specifications? Difficult to understand.
